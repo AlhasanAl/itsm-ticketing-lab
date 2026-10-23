@@ -90,32 +90,10 @@ Full definitions and scoring examples: [docs/priority-and-sla.md](docs/priority-
 
 ---
 
-## Run it
-
-No build step and no dependencies — plain HTML, CSS, and JavaScript.
-
-1. Clone or download the repo.
-2. Open `index.html` in any modern browser.
-
 **Publish on GitHub Pages:** repo **Settings -> Pages -> Deploy from a branch -> `main` / `(root)` -> Save**. The site appears at `https://<username>.github.io/itsm-ticketing-lab/` within a minute or two.
 
 The simulation clock is fixed at **Oct 20, 2026 15:00** so SLA timers are reproducible. Tickets created on the *Create New Incident* page live in memory and reset on refresh.
 
-## Project structure
-
-```
-itsm-ticketing-lab/
-|-- index.html          # App shell (top bar, navigator, main view)
-|-- css/styles.css      # Styling, priority colors, responsive layout
-|-- js/data.js          # Priority matrix, SLA targets, groups, 14 incidents
-|-- js/app.js           # Router, dashboard, queue, incident form, triage assistant
-|-- docs/               # SOP, priority guide, walkthroughs, portfolio notes
-`-- screenshots/        # Images used in this README
-```
-
-## Tech
-
-HTML5 · CSS (Grid/Flexbox, CSS variables) · vanilla JavaScript (hash routing, no frameworks)
 
 ## Concepts
 
