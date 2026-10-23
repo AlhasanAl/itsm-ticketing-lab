@@ -24,7 +24,7 @@ Get every incident to the people who can fix it as fast as its priority demands,
 
 **Hierarchical escalation** — notify **management** when business or patient risk is high. Required for:
 
-- Every **P1** (Service Desk Lead + Major Incident Manager within 15 minutes)
+- A suspected **P1 / major incident** — notify the Service Desk Lead and on-call immediately
 - Any **security incident** with possible PHI exposure
 - Any ticket about to breach its resolution SLA with no clear path to fix
 - Customer complaints about service handling
@@ -51,17 +51,16 @@ Do **not** escalate just because a ticket is hard or the caller is senior.
 - [ ] Correct priority with a one-line rationale
 - [ ] The user has been told who has the ticket and when to expect the next update
 
-## 6. Major Incident (P1) procedure
+## 6. If a major incident is suspected — Tier 1's role
 
-1. Confirm scope from more than one device/user.
-2. Set Impact 1 / Urgency 1. Flag as Major Incident.
-3. Page the owning resolver group's on-call.
-4. Notify Service Desk Lead + Major Incident Manager; open a bridge.
-5. Give the business a workaround (e.g., clinical downtime procedures).
-6. Check the change calendar for recent changes on the affected CI.
-7. Link duplicate calls as **child** incidents.
-8. Update stakeholders every 30 minutes.
-9. Confirm resolution with the business before resolving; ensure a Problem record is opened for root cause.
+Tier 1 doesn't *run* a major incident; a Major Incident Manager does. Tier 1's job is to **recognize it early and escalate fast**:
+
+1. Confirm scope from more than one device/user (is it really widespread?).
+2. Escalate immediately to the Service Desk Lead and the owning resolver group's on-call.
+3. Give the user any available workaround and tell them who now owns it.
+4. Keep logging duplicate reports so the owning team sees the real scope.
+
+From there, the formal major-incident process (bridge call, comms cadence, root-cause/problem review) is led by the Major Incident Manager — not the Service Desk.
 
 ## 7. Security incident procedure (Tier 1)
 

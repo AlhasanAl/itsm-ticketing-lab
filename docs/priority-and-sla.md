@@ -6,7 +6,7 @@ Priority is **calculated**, never picked by hand: `Priority = Impact × Urgency`
 
 | Level | Meaning | Examples |
 |---|---|---|
-| 1 – High | Whole department, site, or many users; or a patient-safety risk | ED Track Board down for all of ED |
+| 1 – High | Whole department, site, or many users; or a patient-safety risk | A core clinical system down for an entire department |
 | 2 – Medium | A team/unit, or one critical shared system | One unit's Wi-Fi; pharmacy label printer; a phishing-compromised account with PHI access |
 | 3 – Low | One user or one device | Lockout, single printer mapping, one badge reader |
 
@@ -40,24 +40,27 @@ Priority is **calculated**, never picked by hand: `Priority = Impact × Urgency`
 
 ## Scoring rules I follow
 
-1. **Score the business impact, not the volume of the caller.** A physician's single badge reader is still P4.
-2. **Ask "what else is affected?"** before finalizing. One question turned a P3 Wi-Fi ticket into a P2.
+1. **Score the business impact, not the seniority of the caller.** One locked-out user is low impact even if they're a manager.
+2. **Ask "what else is affected?"** before finalizing — scope (one device vs. a whole area) often sets the priority.
 3. **Patient care raises urgency.** If clinicians can't start or continue care, urgency is High.
 4. **Security incidents with credentials entered are P2 minimum.**
-5. **Re-score whenever facts change**, and write down why in the work notes.
-6. **Requests aren't incidents.** "I want…" goes to the service catalog.
+5. **Requests aren't incidents.** "I want…" goes to the service catalog.
 
 ## Lab placements
 
 | Ticket | I / U | Priority | Why |
 |---|---|---|---|
-| INC0010001 ED Track Board down | 1 / 1 | P1 | Entire ED, no workaround but paper |
-| INC0010003 Pharmacy label printer | 2 / 1 | P2 | Department + delayed medications |
-| INC0010004 4 West Wi-Fi (revised) | 2 / 1 | P2 | Nurse call handsets dropping |
-| INC0010005 Phishing, creds entered | 2 / 1 | P2 | Active compromise, PHI access |
-| INC0010002 Nurse lockout | 3 / 1 | P3 | One user, can't start shift |
-| INC0010009 Finance share down | 2 / 2 | P3 | Department, not patient-facing |
-| INC0010008 Badge reader | 3 / 2 | P4 | One device, workaround |
-| INC0010011 Epic AVS printing | 3 / 2 | P4 | Few rooms, manual printer workaround |
-| INC0010010 Slow laptop | 3 / 3 | P5 | Usable, no deadline |
-| INC0010006 Second monitor | 3 / 3 | P5 | Request → converted to RITM |
+| INC0010012 Phishing, creds entered | 2 / 1 | P2 | Active credential exposure |
+| INC0010001 Account lockout before shift | 3 / 1 | P3 | One user, can't start shift, no workaround |
+| INC0010002 Password expired | 3 / 1 | P3 | One user, patients waiting |
+| INC0010009 Wi-Fi down on a unit | 2 / 2 | P3 | A whole unit, but workarounds exist |
+| INC0010011 Finance shared drive down | 2 / 2 | P3 | A department, not patient-facing |
+| INC0010003 Outlook auth prompts | 3 / 2 | P4 | One user, webmail workaround |
+| INC0010004 VPN/MFA after new phone | 3 / 2 | P4 | One user, can work on-site |
+| INC0010006 Printer missing after reimage | 3 / 2 | P4 | One workstation, nearby printer |
+| INC0010010 Printer won't power on | 3 / 2 | P4 | One printer, hardware fault → Desktop Support |
+| INC0010013 Epic AVS prints to wrong printer | 3 / 2 | P4 | One room's workflow |
+| INC0010014 App error after update | 3 / 2 | P4 | One user's app |
+| INC0010005 Slow laptop | 3 / 3 | P5 | Usable, no deadline |
+| INC0010007 Monitor flickering | 3 / 3 | P5 | One display, awaiting triage |
+| INC0010008 Second monitor | 3 / 3 | P5 | Request → converted to RITM |
